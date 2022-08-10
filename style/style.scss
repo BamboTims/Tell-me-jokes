@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&family=Kdam+Thmor+Pro&display=swap");
+
+// font-family: 'Fascinate', cursive;
+// font-family: 'Kdam Thmor Pro', sans-serif;
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	font-family: "Fascinate", cursive;
+	background-color: #ee145b;
+}
+
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background: url(../img/giphy.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+
+	h1 {
+		font-size: 2rem;
+		letter-spacing: 2px;
+		text-align: center;
+		color: #fff;
+
+		span {
+			display: block;
+			font-size: 5rem;
+		}
+	}
+}
+
+.btn {
+	position: relative;
+	font-family: "Kdam Thmor Pro", sans-serif;
+	display: inline-block;
+	padding: 1rem;
+	letter-spacing: 4px;
+	margin-top: 3rem;
+	background-color: #fca311;
+	box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.3);
+	}
+
+	&:focus {
+		transform: translateY(-1px);
+		box-shadow: 0.5rem 1rem 2rem #0000004d;
+	}
+}
+
+.wait {
+	cursor: wait;
+}

@@ -1,9 +1,9 @@
 "use strict";
 // API GOTTEN FROM RAPID HUB APIS AND JOKEAPI.DEV
 
-const voiceSelect = document.querySelector(".voices");
 const btn = document.querySelector(".btn");
 
+// Voice RSS SDK
 const VoiceRSS = {
 	speech: function (e) {
 		this._validate(e), this._request(e);
@@ -109,6 +109,7 @@ const VoiceRSS = {
 	},
 };
 
+// APP 
 class App {
 	joke;
 	constructor() {
@@ -135,6 +136,7 @@ class App {
 		});
 	}
 
+// 	Get Jokes
 	async getJoke() {
 		try {
 			const url =
